@@ -1,0 +1,238 @@
+:root {
+    --bg-image: url('./galaxybackground.jpeg');
+
+    --primary-color: 111, 76, 255;
+
+    --bg-color: black;
+
+    --text-color: #FFF;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'DM Sans';
+    line-height: 2em;
+}
+
+body > * {
+    margin-block: 5em;
+}
+
+#header {
+  position: fixed;
+  border-bottom: 2px solid white;
+  margin-block: 0;
+  width: 100%;
+  height: 10%;
+  background-color: var(--bg-color);
+  top: 0;
+  z-index: 1;
+}
+
+nav {
+  display: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    text-align: center;
+}
+
+
+@media (min-width: 50em) {
+    #header {
+        position: fixed;
+        border-bottom: 2px solid white;
+        margin-block: 0;
+        width: 100%;
+        height: 18%;
+        background-color: var(--bg-color);
+        top: 0;
+        z-index: 1;
+    }
+    
+    nav {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: space-around;
+        position: relative;
+        bottom: 1rem;
+        margin-right: 2em;
+    }
+    
+    nav a {
+        list-style: none;
+        color: var(--text-color);
+        text-decoration: none;
+        text-align: center;
+    }
+    
+    .btn {
+        font-family: 'DM Sans', sans-serif;
+        font-size: 18px;
+        padding: 12px 32px;
+        margin: 1rem;
+        cursor: pointer;
+        border-radius: 4px;
+        transition: all 0.3s ease;
+        border-radius: 50px;
+    }
+    
+
+    .btn-gradient {
+        background-image: linear-gradient(to right, rgb(1 134 218), rgb(182 49 167));
+        border: 0;
+        color: rgba(var(--text-color));
+    }
+
+    .btn-glow:hover {
+        box-shadow: rgba(var(--primary-color), 20) 0px 0px 20px 0px;
+    }
+    
+}
+
+img {
+    max-width: 100%;
+}
+
+.text-gradient {
+    background: linear-gradient(to right, #30CFD0, #c43ad6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.img-container {
+    background-image: url('./ethereumpicture.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 100%;
+    height: 42em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-container {
+    background-color: var(--bg-color);
+    width: 30%;
+    color: white;
+    border-radius: 8px;
+    border: 1px solid black;
+    position: relative;
+    top: 8%;
+}
+
+#intro {
+    margin-top: 0;
+}
+
+#projects {
+    text-align: center;
+}
+#projects > * {
+    margin-block: 5em;
+}
+
+
+
+.title {
+    text-align: center;
+    color: white;
+    border: 2px double transparent;
+    background-image: linear-gradient(rgb(13, 14, 33), rgb(13, 14, 33)), radial-gradient(circle at left top, rgb(1, 110, 218), rgb(217, 0, 192));
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.title a {
+    text-decoration: none;
+    color: white;
+}
+
+.title:hover {
+    background-image: linear-gradient(to right, rgb(1 134 218), rgb(182 49 167));
+    color: rgba(var(--text-color));
+    transition: all 0.3s ease;
+}
+
+@media (min-width: 50em) {
+    #mixed-messages {
+        max-width: 50em;
+        height: auto;
+        margin-right: 1.8em;
+        transition: all 0.3s ease;
+    }
+     
+    .title {
+        position: absolute;
+    }
+
+}
+
+@media (min-width: 30em) {
+    #aboutme {
+        text-align: center;
+    }
+
+    #myimage {
+        max-width: 30em;
+        height: auto;
+        transition: all 0.3s ease;
+        margin-left: auto;
+    }
+}
+
+#skills {
+  text-align: center;
+}
+
+
+.icons {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: space-between;
+    justify-content: center;
+    margin: auto;
+}
+
+i {
+    padding: 1rem;
+}
+
+#contact {
+    text-align: center;
+    margin: 0;
+}
+
+
+.bg-blur {
+    overflow: hidden;
+    background-color: transparent;
+}
+.bg-blur::before {
+    content: '';
+    background-color: transparent;
+    background-image: var(--bg-image);
+    background-size: cover;
+    height: 40%;
+    width: 100%;
+    position: absolute;
+    filter: blur(30px);
+    z-index: -1;
+}
+
+
+.icon-container {
+    display: inline-flex;
+}
+

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="css/main.css">
+     <script src="https://kit.fontawesome.com/ac570eab9a.js" crossorigin="anonymous"></script>
+     <title>Dylan's Portfolio!</title>
+ </head>
+   <body>
+      <header id="header">
+          <h1 id="name">Dylan Molina</h1>
+          <nav>
+                <a href="#aboutme"><li><button class="btn btn-gradient btn-glow">About Me</button></li></a>
+                <a href="#projects"><li><button class="btn btn-gradient btn-glow">Projects</button></li></a>
+                <a href="#skills"><li><button class="btn btn-gradient btn-glow">Skills</button></li></a>
+          </nav>
+      </header>
+
+      <section id="intro">
+         <div class="img-container">
+             <div class="text-container"> 
+                <h2>Hi! I'm Dylan, a <span class="text-gradient">web3 developer.</span></h2>       
+             </div>
+         </div>
+      </section>
+
+      <section id="aboutme">
+          <h2>Who am I, anyways?</h2>
+          <div class="split">
+              <div>
+                 <img src="css/IMG_7400.png" id="myimage" alt="">
+              </div>
+              <div>
+                 <p>Welcome to my website! I am a rising high school senior that's excited about the future of technology and, more specifically, how startups will leverage this technology to make the world a better place and advance our civilization. A little after the 2021 NFT boom I realized that a lot of innovation had been happening in web3 for some time, so I decided to go all in and teach myself everything about web development. This is how I found out that I had a passion for coding and I've been hacking away ever since. I'm currently trying to get better at React (JavaScript library) and Solidity (smart contract language). Below you will find a few of the projects I've done. I plan on adding web3 projects as I complete them, these are just the projects I worked on as I learned the basics of web development! p.s.You can click on the title of each project to visit it's github repo!</p>
+              </div>
+          </div>
+      </section>
+
+      <section id="projects">
+          <h2>What I've done so far</h2>
+          <section>
+              <button class="title"><a href="https://github.com/Dmigit/Responsive-Web-Design-Project-2" target="_blank"><h3>TSMC's Landing Page</h3></a></button>
+              <img src="css/screenshot1.png" alt="">
+              <p>This is a project I did to work on my responsive design skills using flexbox. It represents the landing page of TSMC (the Taiwan Semiconductor Company),<wbr> which happens to be one of my favorite companies. I used html and css to build and style it respectively and used flexbox to make sure that the <wbr> content would maintain it's intergity at any screen size!</p>
+          </section>
+          <section>
+              <button class="title"><a href="https://github.com/Dmigit/Mixed-Messages-Portfolio-Project" target="_blank"><h3>Message Generator!</h3></a></button>
+              <img src="css/mixedmessages.png" id="mixed-messages" alt="">
+              <p>I practiced writing javascript with this message generator that outputs a random inspirational message every time a user runs it. It was a fun JS-only project but I plan to integrate JS into my future web applications. (p.s. I used JS on this website, click on my name at the top of the page:)</p>
+          </section>
+          <section>
+              <button class="title"><a href="https://github.com/Dmigit/WavePortal-dApp" target="_blank"><h3>WavePortal dApp</h3></a></button>
+              <img src="css/screenshot2.png" alt="">
+              <p>This is the project that I am most proud of and that has taken me the most time. It is a full-stack dApp (decentralized Application) that allows users<wbr> to connect their wallet and send a "wave" to an ethereum adress. I wrote a smart contract in Solidity and deployed it to the Rinkeby test network.<wbr> Then I used React as a frontend to interact with the smart contract. This is just the beginning of this project. I'm sharpening up my React skills so that<wbr> I can build a beatiful frontend with a lot of functionality.</p>
+          </section>
+      </section>
+
+      <section id ="skills">
+          <h2>What I can do!</h2>
+          <h4>(In order of more to less competency from left to right and top to bottom)</h4>
+          <div class="icons">
+            <i class="fa-brands fa-python fa-6x"></i>
+            <i class="fa-brands fa-html5 fa-6x"></i>
+            <i class="fa-brands fa-js fa-6x"></i>
+            <i class="fa-brands fa-css3-alt fa-6x"></i>
+            <i class="fa-brands fa-ethereum fa-6x"></i>
+            <i class="fa-brands fa-github fa-6x"></i>
+            <i class="fa-brands fa-git fa-6x"></i>
+            <i class="fa-brands fa-react fa-6x"></i>
+            <i class="fa-brands fa-node fa-6x"></i>
+          </div>
+      </section>
+
+      <section class="bg-blur" id="contact">
+          <h2 class="text-gradient">Contact Me!</h2>
+          <h3>If you're building something cool, then reach out to me! I'd love to work with you!</h3>
+          <div class="icon-container">
+            <a href="https://www.linkedin.com/in/dylan-molina-447044230/" target="_blank"><i class="fa-brands fa-linkedin fa-5x fa-inverse"></i></a>
+            <a href="https://github.com/Dmigit" target="_blank"><i class="fa-brands fa-github-square fa-5x fa-inverse"></i></a>
+            <a href="mailto: dylanivanmolina@gmail.com" target="_blank"><i class="fa-solid fa-envelope fa-5x fa-inverse"></i></a>
+          </div>
+      </section>
+
+      <script src="main.js"></script>
+    </body>
+</html>
