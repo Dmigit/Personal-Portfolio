@@ -134,6 +134,17 @@ img {
     margin-top: 0;
 }
 
+@media (max-width: 20em) {
+    .text-container {
+        background-color: var(--bg-color);
+        width: 40%;
+        color: white;
+        border-radius: 8px;
+        border: 1px solid black;
+        position: relative;
+        top: 8%;
+    }
+}
 #projects {
     text-align: center;
 }
