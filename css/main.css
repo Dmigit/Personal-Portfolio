@@ -9,6 +9,7 @@
 }
 
 html {
+    max-width: 100%;
     overflow-x: hidden;
 }
 
@@ -134,7 +135,7 @@ img {
     margin-top: 0;
 }
 
-@media (max-width: 20em) {
+@media (max-width: 500px) {
     .text-container {
         background-color: var(--bg-color);
         width: 40%;
